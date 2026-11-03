@@ -38,11 +38,9 @@ Superstore-Business-Intelligence-Capstone/
 * **UX:** Designed with 10px rounded borders, clean center-aligned matrices, and dynamic slicers to provide a cohesive, modern app-like executive experience.
 
 ## 📂 File Descriptions
-* `Superstore_Capstone.pbix`: The complete Power BI project file containing all Power Query M code, DAX measures, and data models.
+* `Superstore_Executive_Hub.pbix`: The complete Power BI project file containing all Power Query M code, DAX measures, and data models.
 * `Superstore_Capstone_Proposal.pdf`: The initial project scoping document outlining the business problem, dataset, and planned analytical architecture.
-* `Superstore_Executive_Wine_Theme_v2.json`: The custom structural theme file.
-* `Superstore_Capstone_Presentation_Script.docx`: The 20-minute executive defense script outlining the project's strategic value.
-* `/Screenshots`: High-resolution captures of the dashboard pages for quick web viewing.
+* `Superstore_Project_Theme.json`: The custom structural theme file.
 
 ---
 *Built to demonstrate advanced data engineering, DAX proficiency, and strategic business analysis.*

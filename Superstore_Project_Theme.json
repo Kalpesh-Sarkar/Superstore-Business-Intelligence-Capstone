@@ -1,0 +1,41 @@
+{
+    "name": "Superstore Web App Theme",
+    "dataColors": [
+        "#1A365D",
+        "#FBBF24",
+        "#7B1113",
+        "#4B5563",
+        "#9CA3AF",
+        "#D1D5DB",
+        "#E5E7EB",
+        "#F3F4F6"
+    ],
+    "background": "#FFFFFF",
+    "foreground": "#1A365D",
+    "tableAccent": "#1A365D",
+    "visualStyles": {
+        "page": {
+            "*": {
+                "background": [
+                    {
+                        "color": {
+                            "solid": {
+                                "color": "#F0F4F8"
+                            }
+                        },
+                        "transparency": 0
+                    }
+                ],
+                "outspacePane": [
+                    {
+                        "backgroundColor": {
+                            "solid": {
+                                "color": "#F0F4F8"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -7,17 +7,10 @@ An enterprise-grade Power BI dashboard engineered to transition a retail busines
 ```text
 Superstore-Business-Intelligence-Capstone/
 ├── README.md
-├── Superstore_Capstone.pbix
+├── Superstore_Executive_Hub.pbix
 ├── Superstore_Capstone_Dashboard_Export.pdf
 ├── Superstore_Capstone_Proposal.pdf
-├── Superstore_Project_Theme_.json
-└── Screenshots/
-    ├── 1_Executive_Overview.png
-    ├── 2_Cross_Selling_Engine.png
-    ├── 3_Profitability_Strategy.png
-    ├── 4_Customer_Retention_RFM.png
-    ├── 5_Appendix_and_Deep_Dives.png
-    └── 6_Strategic_Conclusion.png
+├── Superstore_Project_Theme.json
 ```
 
 ## 📊 Analytical Engines & Key Insights

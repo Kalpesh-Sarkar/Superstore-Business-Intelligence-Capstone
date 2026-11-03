@@ -1,17 +1,18 @@
-# Superstore Business Intelligence Capstone 📊🍷
+# ⚡ Superstore Business Intelligence Capstone
 
-## 📌 Project Overview
-An enterprise-grade Power BI dashboard engineered to transition a retail business from volume-driven sales to profit-led scaling. This project replaces vanity metrics with actionable data models, focusing on cross-selling optimization, unit economics, and targeted customer retention.
+![BI Tool](https://img.shields.io/badge/BI_TOOL-POWER_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Engine](https://img.shields.io/badge/ENGINE-DAX-0078D4?style=for-the-badge)
+![ETL](https://img.shields.io/badge/ETL-POWER_QUERY-yellow?style=for-the-badge)
+![Algorithm](https://img.shields.io/badge/ALGORITHM-FP--GROWTH-blue?style=for-the-badge)
+![License](https://img.shields.io/badge/LICENSE-MIT-green?style=for-the-badge)
 
-### 🗂️ Repository Structure
-```text
-Superstore-Business-Intelligence-Capstone/
-├── README.md
-├── Superstore_Executive_Hub.pbix
-├── Superstore_Capstone_Dashboard_Export.pdf
-├── Superstore_Capstone_Proposal.pdf
-├── Superstore_Project_Theme.json
-```
+> An enterprise-grade Power BI dashboard engineered to transition a retail business from volume-driven sales to profit-led scaling. This project replaces vanity metrics with actionable data models, focusing on cross-selling optimization, unit economics, and targeted customer retention.
+
+## 📑 Table of Contents
+
+* [Analytical Engines & Key Insights](#-analytical-engines--key-insights)
+* [Design & UI Architecture](#-design--ui-architecture)
+* [Repository Contents](#-repository-contents)
 
 ## 📊 Analytical Engines & Key Insights
 
@@ -25,22 +26,4 @@ Superstore-Business-Intelligence-Capstone/
 
 ### 3. Profitability & Portfolio Strategy
 * **The Architecture:** A unit economics audit combined with a dynamic DAX discount sensitivity curve locked to a secondary axis.
-* **The Insight:** Furniture items (specifically Tables and Bookcases) are structural loss leaders. The sensitivity model mathematically proves that any promotional discount exceeding **20%** causes net profit margins to collapse completely into negative territory.
-* **Action:** Establish a strict 20% discount cap. Reprice, bundle, or delist capital-destroying products.
-
-### 4. Customer Retention & RFM Engine
-* **The Architecture:** A behavioral segmentation model built using the `ADDCOLUMNS` and `SWITCH` DAX functions. It calculates Recency, Frequency, and Monetary value across the entire customer lifecycle to assign dynamic marketing tiers.
-* **The Insight:** A small segment of "Champions" carries the enterprise, while a high volume of previously valuable customers are slipping into the "At Risk" tier.
-* **Action:** Halt expensive blanket marketing. Redirect the promotional budget specifically to win-back campaigns targeting the actionable "At Risk" matrix hit-list.
-
-## 🎨 Design & UI Architecture
-* **Theme:** Custom JSON theme applying a Wine Red (`#7F011F`), Light Sand (`#F5EBD0`), and Deep Slate (`#2C3E50`) palette.
-* **UX:** Designed with 10px rounded borders, clean center-aligned matrices, and dynamic slicers to provide a cohesive, modern app-like executive experience.
-
-## 📂 File Descriptions
-* `Superstore_Executive_Hub.pbix`: The complete Power BI project file containing all Power Query M code, DAX measures, and data models.
-* `Superstore_Capstone_Proposal.pdf`: The initial project scoping document outlining the business problem, dataset, and planned analytical architecture.
-* `Superstore_Project_Theme.json`: The custom structural theme file.
-
----
-*Built to demonstrate advanced data engineering, DAX proficiency, and strategic business analysis.*
+* **The Insight:** Furniture items (specifically Tables and Bookcases) are structural loss leaders. The sensitivity model mathematically proves that any promotional discount exceeding **20%** causes net profit

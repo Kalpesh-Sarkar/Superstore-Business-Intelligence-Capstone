@@ -1,44 +1,55 @@
 # Superstore Business Intelligence Capstone 📊🍷
 
-## Project Overview
-This repository contains an enterprise-grade Business Intelligence architecture built for a simulated retail entity, "Superstore". The primary objective of this capstone was to transition the company's operational strategy from volume-driven vanity metrics (gross sales) to a sustainable, profit-led growth model.
+## 📌 Project Overview
+An enterprise-grade Power BI dashboard engineered to transition a retail business from volume-driven sales to profit-led scaling. This project replaces vanity metrics with actionable data models, focusing on cross-selling optimization, unit economics, and targeted customer retention.
 
-**Tech Stack:** Power BI, DAX, Power Query (M), JSON (Custom UI Architecture)  
-**Core Analytical Models:** FP-Growth (Market Basket), RFM Segmentation, Unit Economics & Breakeven Analysis
+### 🗂️ Repository Structure
+```text
+Superstore-Business-Intelligence-Capstone/
+├── README.md
+├── Superstore_Capstone.pbix
+├── Superstore_Capstone_Dashboard_Export.pdf
+├── Superstore_Capstone_Proposal.pdf
+├── Superstore_Project_Theme_.json
+└── Screenshots/
+    ├── 1_Executive_Overview.png
+    ├── 2_Cross_Selling_Engine.png
+    ├── 3_Profitability_Strategy.png
+    ├── 4_Customer_Retention_RFM.png
+    ├── 5_Appendix_and_Deep_Dives.png
+    └── 6_Strategic_Conclusion.png
+```
 
----
+## 📊 Analytical Engines & Key Insights
 
-## 🛠️ Data Architecture & ETL
-The foundation of this project was built on a raw, highly disconnected dataset (`Superstore_Messy`). To ensure enterprise-grade accuracy, extensive data engineering was performed:
-* **Data Cleansing (Power Query):** Stripped invalid strings (e.g., "Unknown Customer"), standardized datetime formats, and resolved null financial anomalies.
-* **Custom DAX Engines:** Engineered fully customized, disconnected analytical tables to bypass standard star-schema limitations. This includes a dedicated Cross-Selling matrix and a dynamic Customer_RFM table generated via `ADDCOLUMNS` and nested `SWITCH` statements.
-* **UI/UX Design:** Built a completely custom JSON theme utilizing a Wine Red (`#7F011F`), Light Sand (`#F5EBD0`), and Deep Slate (`#2C3E50`) palette to deliver a modern, app-like executive experience.
-
----
-
-## 📈 The 4 Analytical Engines (Dashboard Pages)
-
-### 1. Executive Overview: The "Vanity Metric" Trap
-At first glance, top-line historical data (2011–2018) shows massive order volume and gross revenue. However, the dashboard reveals that overall revenue acts as a vanity metric. Massive spikes in sales volume frequently correlate with drops in net profit, indicating severe margin leaks hidden beneath promotional growth.
+### 1. Executive Overview & Top-Line Performance
+* **The Reality:** While top-line revenue and order volumes appear strong, they act as vanity metrics that mask severe underlying margin leaks.
+* **The Fix:** Shifted the analytical focus away from gross sales and toward net profit capture and structural margin governance.
 
 ### 2. Cross-Selling Engine (FP-Growth Model)
-To increase Average Order Value (AOV) without relying on discounts, I implemented an FP-Growth Market Basket Analysis model. 
-* **Insight:** The DAX engine mathematically calculates "Bundle Confidence" (conditional probability). For example, it identifies the exact percentage likelihood that a customer buying a Phone will also purchase Storage.
-* **Action:** Hardcoding these high-confidence product pairings into the online checkout flow drives organic, highly profitable cross-selling.
+* **The Architecture:** Utilizes a custom DAX-driven Market Basket Analysis based on the FP-Growth algorithm to identify hidden purchasing relationships.
+* **The Insight:** High-confidence natural pairings exist (e.g., Technology and Furnishings). Hardcoding these specific product recommendations into the checkout flow organically increases Average Order Value (AOV) without relying on margin-destroying discounts.
 
-### 3. Profitability & Portfolio Strategy (Unit Economics)
-This engine audits the product portfolio to isolate "Capital Destroyers" (structural loss leaders like Tables and Bookcases). 
-* **Insight:** I engineered a custom dynamic DAX threshold line on the secondary axis of the discount sensitivity curve. It mathematically proves that **any promotional discount exceeding 20% causes net profit margins to collapse completely into negative territory**, regardless of the volume sold.
+### 3. Profitability & Portfolio Strategy
+* **The Architecture:** A unit economics audit combined with a dynamic DAX discount sensitivity curve locked to a secondary axis.
+* **The Insight:** Furniture items (specifically Tables and Bookcases) are structural loss leaders. The sensitivity model mathematically proves that any promotional discount exceeding **20%** causes net profit margins to collapse completely into negative territory.
+* **Action:** Establish a strict 20% discount cap. Reprice, bundle, or delist capital-destroying products.
 
 ### 4. Customer Retention & RFM Engine
-Rather than relying on demographic assumptions or simple year-by-year slicing, this engine uses RFM (Recency, Frequency, Monetary) behavior to evaluate true lifetime customer value.
-* **Insight:** The DAX model dynamically assigns every customer a composite score and categorizes them into marketing tiers (e.g., 🏆 Champions, ⚠️ At Risk). 
-* **Action:** Leadership can instantly filter the database to generate a targeted hit-list of high-value "At Risk" customers, redirecting blanket marketing budgets toward highly efficient win-back campaigns.
+* **The Architecture:** A behavioral segmentation model built using the `ADDCOLUMNS` and `SWITCH` DAX functions. It calculates Recency, Frequency, and Monetary value across the entire customer lifecycle to assign dynamic marketing tiers.
+* **The Insight:** A small segment of "Champions" carries the enterprise, while a high volume of previously valuable customers are slipping into the "At Risk" tier.
+* **Action:** Halt expensive blanket marketing. Redirect the promotional budget specifically to win-back campaigns targeting the actionable "At Risk" matrix hit-list.
+
+## 🎨 Design & UI Architecture
+* **Theme:** Custom JSON theme applying a Wine Red (`#7F011F`), Light Sand (`#F5EBD0`), and Deep Slate (`#2C3E50`) palette.
+* **UX:** Designed with 10px rounded borders, clean center-aligned matrices, and dynamic slicers to provide a cohesive, modern app-like executive experience.
+
+## 📂 File Descriptions
+* `Superstore_Capstone.pbix`: The complete Power BI project file containing all Power Query M code, DAX measures, and data models.
+* `Superstore_Capstone_Proposal.pdf`: The initial project scoping document outlining the business problem, dataset, and planned analytical architecture.
+* `Superstore_Executive_Wine_Theme_v2.json`: The custom structural theme file.
+* `Superstore_Capstone_Presentation_Script.docx`: The 20-minute executive defense script outlining the project's strategic value.
+* `/Screenshots`: High-resolution captures of the dashboard pages for quick web viewing.
 
 ---
-
-## 💡 Strategic Executive Recommendations
-Based on the data architecture and models built in this dashboard, the "Bull Case" for Superstore requires three immediate operational shifts:
-1. **Enforce a Strict 20% Discount Cap:** Implement strict pricing governance; no standard promotional discount can exceed the 20% breakeven threshold.
-2. **Restructure Loss Leaders:** Discontinue structurally unprofitable items (Tables/Bookcases) or gate them exclusively behind high-margin bundles using the Page 2 cross-selling engine.
-3. **Targeted Retention Marketing:** Cease uncalibrated, blanket marketing. Reallocate the promotional budget exclusively toward the "At Risk" RFM segment to maximize ROI.
+*Built to demonstrate advanced data engineering, DAX proficiency, and strategic business analysis.*
